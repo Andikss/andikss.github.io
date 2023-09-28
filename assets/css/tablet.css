@@ -124,4 +124,12 @@
     .footer-content {
         overflow: hidden;
     }
+
+    .skills-container {
+        display: none;
+    }
+
+    .slider-container {
+        margin-bottom: 48px;
+    }
 }

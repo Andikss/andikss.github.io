@@ -319,6 +319,21 @@
     width: 100%;
 }
 
+.go-down {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: loadingAnimation 1.5s infinite;
+    width: 100%;
+    margin-top: -3%; 
+}
+
+.arrow-2 {
+    margin-top: -16px;
+}
+
 .topbar {
     height: 70px;
     background-color: #1f202332;
@@ -589,6 +604,7 @@ footer {
     background-color: #3C3E43;
     border-top: 5px solid #F1BE6C;
     border-bottom:  5px solid #F1BE6C;
+    border: none !important;
 }
 
 .section-desc {

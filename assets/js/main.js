@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         loader.style.visibility = "hidden";
 
         document.body.classList.remove("no-scroll");
-    }, 1000); 
+    }, 3000); 
 });
 
 

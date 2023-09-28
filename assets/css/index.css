@@ -583,6 +583,7 @@ input {
 .social {
     color: #FEFFFE;
     font-size: 1.3em;
+    cursor: pointer;
 }
 
 #about {
@@ -873,16 +874,25 @@ input[type="checkbox"]:checked ~ .letter {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-  }
+    width: 5px;
+}
 
 ::-webkit-scrollbar-thumb {
-    background: #F1BE6C;
+    background: #3C3E43;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+::-webkit-scrollbar-track {
+    background: #F1BE6C;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    top: 0;
+}
+
 
 @keyframes spin {
     0% { transform: rotate(0deg); }

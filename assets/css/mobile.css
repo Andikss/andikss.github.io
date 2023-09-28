@@ -9,12 +9,12 @@
     }
 
     .go-down {
-        margin-top: -12px;
+        margin-top: -10%;
     }
 
     .name {
         font-size: 48px;
-        padding-right: 200px;
+        padding-right: 72px;
     }
 
     .type {

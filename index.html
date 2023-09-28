@@ -13,22 +13,23 @@
 <body>
 
     <div class="loader-container">
-        <div class="loader">
-            <svg viewBox="0 0 80 80">
-                <circle r="32" cy="40" cx="40" id="test"></circle>
-            </svg>
-        </div>
-        
-        <div class="loader triangle">
-            <svg viewBox="0 0 86 80">
-                <polygon points="43 8 79 72 7 72"></polygon>
-            </svg>
-        </div>
-        
-        <div class="loader">
-            <svg viewBox="0 0 80 80">
-                <rect height="64" width="64" y="8" x="8"></rect>
-            </svg>
+        <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
         </div>
     </div>
     
@@ -91,9 +92,9 @@
                             <button id="btn-cv" class="btn-outline">
                                 Download CV
                             </button>
-                            <button data-tab-index="3" class="btn-fill">
+                            <a href="https://wa.me/qr/Q5BPJDQQIUBLH1" class="btn-fill">
                                 Contact Me
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <div class="tabs flex justify-content-center fade-left">

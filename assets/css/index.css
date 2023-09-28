@@ -376,6 +376,7 @@
     font-size: 14px;
     transition: background-color 0.2s ease;
     cursor: pointer;
+    z-index: 3;
 }
 
 .btn-fill:hover {
@@ -702,13 +703,13 @@ input {
 .vignette-bot {
     border-right: 48px solid #F1BE6C;
     border-bottom: 48px solid #F1BE6C;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 20%;
     position: absolute;
     right: 0;
     bottom: 0;
     margin-bottom: -100vh;
-    z-index: 1;
+    z-index: 0;
 }
 
 /* .vignette-top-1 {

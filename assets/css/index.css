@@ -585,6 +585,8 @@ footer {
     height: 300px;
     width: 100vw;
     background-color: #3C3E43;
+    border-top: 5px solid #F1BE6C;
+    border-bottom:  5px solid #F1BE6C;
 }
 
 .section-desc {

@@ -223,6 +223,28 @@
         width: 100%;
     }
 
+    footer {
+        height: 250px;
+        border: none;
+    }
+
+    .footer-content {
+        display: none;
+    }
+
+    .div {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+
+    .div .social {
+        margin: 10px;
+        font-size: 1.5em;
+        margin-bottom: -20px;
+    }
+
     .modal-col {
         padding-left: 0px !important;
     }
@@ -235,9 +257,5 @@
         margin-top: -72px;
         padding: 18px !important;
     }
-    .footer-content {
-        padding-left: 80%;
-        overflow: auto;
-      }
 }
   

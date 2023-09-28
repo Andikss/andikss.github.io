@@ -1,14 +1,14 @@
 // Loader 
-// document.addEventListener("DOMContentLoaded", function() {
-//     const loader = document.querySelector(".loader-container");
-//     loader.style.display = "flex";
-//     document.body.classList.add("no-scroll");
+document.addEventListener("DOMContentLoaded", function() {
+    const loader = document.querySelector(".loader-container");
+    loader.style.display = "flex";
+    document.body.classList.add("no-scroll");
 
-//     window.addEventListener("load", function() {
-//         loader.style.display = "none";
-//         document.body.classList.remove("no-scroll");
-//     });
-// });
+    window.addEventListener("load", function() {
+        loader.style.display = "none";
+        document.body.classList.remove("no-scroll");
+    });
+});
 
 
 // Skills SLider

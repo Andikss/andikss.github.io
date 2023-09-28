@@ -375,6 +375,7 @@
     color: #000000;
     font-size: 14px;
     transition: background-color 0.2s ease;
+    cursor: pointer;
 }
 
 .btn-fill:hover {
@@ -456,7 +457,7 @@ footer {
 
 .projects-card {
     width: auto;
-    height: 250px;
+    height: 230px;
     /* border: 1px solid #F1BE6C; */
     border-radius: 5px;
     margin-bottom: 24px;
@@ -594,6 +595,7 @@ input {
     color: #FEFFFE;
     font-size: 1.3em;
     cursor: pointer;
+    z-index: 3;
 }
 
 #about {
@@ -706,6 +708,7 @@ input {
     right: 0;
     bottom: 0;
     margin-bottom: -100vh;
+    z-index: 1;
 }
 
 /* .vignette-top-1 {

@@ -31,7 +31,7 @@ function slideSkills(direction) {
 
 // Auto Typed Text
 var typed = new Typed(".auto-type", {
-    strings: ["Web Developer", "Loving You ❤"],
+    strings: ["Web Developer", "Determined learner", "Loving You ❤"],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true

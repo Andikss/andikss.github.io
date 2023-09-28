@@ -801,7 +801,7 @@ input {
 }
 
 .profile {
-    filter: brightness(0.7);
+    filter: brightness(1);
     max-width: 70% !important;
     z-index: 3;
     padding: 15px;

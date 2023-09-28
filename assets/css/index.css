@@ -8,6 +8,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .loading {

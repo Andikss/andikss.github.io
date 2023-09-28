@@ -1,14 +1,15 @@
 // Loader 
 document.addEventListener("DOMContentLoaded", function() {
     const loader = document.querySelector(".loader-container");
-    loader.style.display = "flex";
-    document.body.classList.add("no-scroll");
 
-    window.addEventListener("load", function() {
-        loader.style.display = "none";
+    setTimeout(function() {
+        loader.style.opacity = "0";
+        loader.style.visibility = "hidden";
+
         document.body.classList.remove("no-scroll");
-    });
+    }, 1000); 
 });
+
 
 
 // Skills SLider

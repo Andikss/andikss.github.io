@@ -4,10 +4,30 @@
     background-color: #3C3E43;
     position: fixed;
     z-index: 999;
-    display: none;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+.loading {
+    margin-top: 24px;
+    color: #F1BE6C;
+    animation: loadingAnimation 1s infinite;
+}
+
+@keyframes loadingAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 .no-scroll {
     overflow: hidden;

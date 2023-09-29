@@ -21,6 +21,7 @@
     }
 
     .go-down {
+        display: none;
         margin-top: -10%;
     }
 

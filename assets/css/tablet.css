@@ -83,6 +83,10 @@
         height: 100% !important;
     }
 
+    .go-down {
+        display: none;
+    }
+
     .vignette-top {
         display: none;
     }

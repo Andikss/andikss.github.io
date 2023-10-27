@@ -3,13 +3,15 @@
     .front-left {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         height:80%;
-        margin-bottom: 72px;
+        width: 100%;
+        /* margin-bottom: 72px; */
     }
 
     .name {
-        font-size: 48px;
+        font-size: 28px;
+        width: 100%;
     }
 
     .type {

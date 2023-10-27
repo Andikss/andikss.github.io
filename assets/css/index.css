@@ -381,8 +381,8 @@
 
 .name {
     color: #F1BE6C;
-    font-size: 86px;
-    width: 60%;
+    font-size: 54px;
+    width: 80%;
     border-bottom: 1px solid #F1BE6C;
 }
 
@@ -576,6 +576,7 @@
 .ex-illustration {
     max-height: 60%;
     max-width: 60%;
+    transition: transform 0.3s ease;
 }
 
 .ex-illustration-container {
@@ -584,6 +585,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ex-illustration:hover {
+    transform: rotate(360deg);
+}
+
+.social:hover {
+    filter: brightness(0.8);
 }
 
 #portfolio {

@@ -34,8 +34,9 @@
     }
 
     .name {
-        padding-right: 450px !important;
-        width: 200%;
+        /* padding-right: 450px !important; */
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     .content {

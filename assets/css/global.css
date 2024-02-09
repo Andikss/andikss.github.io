@@ -1,0 +1,84 @@
+:root {
+    --main: #34353A;
+    --secondary: #3C3E43;
+    --accent: #F1BE6C;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none !important;
+    color: white;
+}
+
+body, main {
+    height: auto;
+    width: 100dvw;
+    overflow-x: hidden;
+    background: var(--main);
+}
+
+/* SCROLLBARS */
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--accent);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    top: 0;
+}
+
+
+
+/* CUSTOM CLASSESS */
+
+.text-title {
+    font-size: 34px;
+}
+
+.text-main {
+    color: var(--main);
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+/* CUSTOM COMPONENTS */
+
+.btn-accent {
+    padding: 10px 24px;
+    background-color: var(--accent);
+    color: var(--main);
+    border-radius: 2px;
+    border: 1px solid var(--accent);
+}
+
+.btn-accent:hover {
+    filter: brightness(1.1);
+}
+
+.btn-outline-accent {
+    padding: 10px 24px;
+    background-color: transparent;
+    color: var(--accent);
+    border-radius: 2px;
+    border: 1px solid var(--accent);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-accent:hover {
+    background-color: var(--accent);
+    color: var(--main);
+}

@@ -176,8 +176,74 @@
             }        
         }
 
+        @media screen and (max-width: 1024px) {
+            .tabs {
+                margin-top: 0px !important;
+            }
+        }
+
         .active-tab {
             display: flex;
         }
+    }
+}
+
+#skills {
+    height: 700px;
+    width: 100%;
+    background: var(--main);
+
+    .row{
+        padding: 4px 12px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .badge {
+                flex: 1;
+                width: 100%;
+                min-height: 190px;
+                background: var(--secondary);
+                border-radius: 5px;
+                transition: background 0.3s ease-in-out;
+    
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    font-size: 1.4em;
+                    font-weight: 500;
+                    opacity: 70%;
+                    transition: color 0.3s ease-in-out;
+                    cursor: default;
+                }
+            }
+
+            .badge:hover {
+                background: var(--accent);
+
+                p {
+                    color: var(--main);
+                }
+            }
+        }
+    }
+
+    .more-skills {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease, max-height 0.3s ease; 
+    }
+    
+    .more-skills.show {
+        opacity: 1;
+        max-height: 500px;
     }
 }

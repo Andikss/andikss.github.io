@@ -321,17 +321,103 @@
                             Show More <i class="bi bi-chevron-down"></i>
                         </a>
                     </div>
-                    
-                    <script>
-                        $(document).ready(function() {
-                            $('#toggle-skills').on('click', function(e) {
-                                e.preventDefault(); 
-                                $('.more-skills').toggleClass('show'); 
-                                $('#toggle-skills i').toggleClass('bi-chevron-down bi-chevron-up'); 
-                            });
-                        });
-                    </script>
-                    
+                </section>
+
+                <section id="experience">
+                    <h2 class="text-white text-title mt-4">Experience</h2>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <ul>
+                                    <li>
+                                        <h4 class="text-white mb-2">
+                                            Network & <span class="text-accent">Software Student</span>
+                                        </h4>
+                                        <div class="wrapper">
+                                            <strong>
+                                                <small>SMKN 1 Punggelan | June 2020 - April 2024</small>
+                                            </strong>
+                                            <p class="mt-2">
+                                                <small>
+                                                    I'm a full-time student in the SIJA program, which stands for Sistem 
+                                                    Informatika Jaringan dan Aplikasi (Network and Application Information System). 
+                                                    This is the place that introduced me to networking and more
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4 class="text-white mb-2">
+                                            Junior <span class="text-accent">Software Engineer</span>
+                                        </h4>
+                                        <div class="wrapper">
+                                            <strong>
+                                                <small>Akastra Toyota | March 2023 - March 2024</small>
+                                            </strong>
+                                            <p class="pt-2">
+                                                <small>
+                                                    I started my programming journey here at Akastra Toyota 
+                                                    as an Intern Junior Software Engineer. I've built and 
+                                                    participated in many incredible projects here. This is the 
+                                                    place that I prepared myself to be a future-ready programmer.
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-content-center">
+                                <img src="./assets/img/Icons/csharp.svg" alt="React Icon" width="200px">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-content-center">
+                                <img src="./assets/img/Icons/react.svg" alt="React Icon" width="200px">
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <ul>
+                                    <li>
+                                        <h4 class="text-white mb-2">
+                                            IT Software Solution <span class="text-accent">for Business</span>
+                                        </h4>
+                                        <div class="wrapper">
+                                            <strong>
+                                                <small>IT Software Solution For Business | March 2023</small>
+                                            </strong>
+                                            <p class="mt-2">
+                                                <small>
+                                                    I participated in LKS IT Software Solution For Business 
+                                                    and became the champion in Banjarnegara. I made my way 
+                                                    through the provincial competition. Even though I didn't 
+                                                    win in the provincial stage, I'm highly proud to made it 
+                                                    this far.
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4 class="text-white mb-2">
+                                            English <span class="text-accent">Certification</span>
+                                        </h4>
+                                        <div class="wrapper">
+                                            <strong>
+                                                <small>TOEIC Test | August 2022</small>
+                                            </strong>
+                                            <p class="pt-2">
+                                                <small>
+                                                    I took the TOEIC Test, which is a benchmark for assessing 
+                                                    someone's English skills. I was able to score 800 points, 
+                                                    which placed me in the 'advanced' level in terms of English 
+                                                    proficiency. <a href="#">Certificate</a>
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </main>
@@ -355,6 +441,14 @@
             tabButtons.forEach((button, index) => {
                 button.addEventListener('click', () => {
                     showTab(index);
+                });
+            });
+
+            $(document).ready(function() {
+                $('#toggle-skills').on('click', function(e) {
+                    e.preventDefault(); 
+                    $('.more-skills').toggleClass('show'); 
+                    $('#toggle-skills i').toggleClass('bi-chevron-down bi-chevron-up'); 
                 });
             });
         </script>

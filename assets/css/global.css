@@ -48,6 +48,10 @@ body, main {
     font-size: 34px;
 }
 
+.text-white {
+    opacity: 90% !important;
+}
+
 .text-main {
     color: var(--main);
 }

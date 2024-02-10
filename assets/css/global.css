@@ -61,6 +61,12 @@ body, main {
     color: var(--accent);
 }
 
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* CUSTOM COMPONENTS */
 
 .btn-accent {

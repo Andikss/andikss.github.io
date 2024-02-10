@@ -372,6 +372,7 @@ header.slide-down {
     #certificate {
         height: auto;
         background: var(--secondary);
+        padding-bottom: 130px !important;
 
         .accent {
             height: 4px;
@@ -395,7 +396,68 @@ header.slide-down {
 }
 
 footer {
-    height: 400px;
+    height: 430px;
     width: 100dvw;
     background: var(--dark);
+    position: relative;
+    padding-top: 100px;
+
+    .banner {
+        width: 80%;
+        height: 180px;
+        background: var(--dark);
+        position: absolute;
+        top: -90px;
+        left: 50%;
+        border-radius: 10px;
+        transform: translateX(-50%);
+
+        .row {
+            height: 100%;
+
+            h4 {
+                margin: 0 !important;
+            }
+
+            p {
+                font-weight: 500;
+                margin: 0 !important;
+            }
+        }
+    }
+    
+    span {
+        font-size: large;
+        font-weight: 550;
+    }
+
+    .contact {
+        margin-top: 32px;
+
+        .wrapper {
+            border: 1px solid white;
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: border-color 0.3s, background 0.3s;
+
+            a i {
+                font-size: 1.3em;    
+                transition: color 0.3s;            
+            }
+        }
+
+        .wrapper:hover {
+            border-color: var(--accent);
+            background: var(--accent);
+            
+            a i {
+                color: var(--main);
+            }
+        }
+    }
 }

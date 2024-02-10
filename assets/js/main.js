@@ -1,14 +1,4 @@
 // Loader 
-document.addEventListener("DOMContentLoaded", function() {
-    const loader = document.querySelector(".loader-container");
-
-    setTimeout(function() {
-        loader.style.opacity = "0";
-        loader.style.visibility = "hidden";
-
-        document.body.classList.remove("no-scroll");
-    }, 3000); 
-});
 
 
 
@@ -31,7 +21,7 @@ function slideSkills(direction) {
 
 // Auto Typed Text
 var typed = new Typed(".auto-type", {
-    strings: ["Web Developer", "Determined learner", "Loving You ❤"],
+    strings: ["Web Developer", "Determined learner", "Software Engineer", "Loving You ❤"],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true

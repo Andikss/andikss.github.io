@@ -12,9 +12,15 @@
     /* border: 1px solid red; */
 }
 
-body, main {
+body {
+    width: 100vw;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+main {
     height: auto;
-    width: 100dvw;
+    width: 100%;
     overflow-x: hidden !important;
     background: var(--main);
 }
@@ -65,6 +71,60 @@ body, main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.dark-sweet {
+    background-color: white;
+    color: var(--main);
+}
+
+.dark-sweet .swal2-confirm {
+    background-color: var(--main);
+    color: white; 
+}
+
+.fade-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity s ease-out, transform s ease-out;
+}
+
+.fade-left.fade-left-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity s ease-out, transform s ease-out;
+}
+
+.fade-right.fade-right-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity s ease-out, transform s ease-out;
+}
+
+.fade-up.fade-up-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-down {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity s ease-out, transform s ease-out;
+}
+
+.fade-down.fade-down-show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* CUSTOM COMPONENTS */
@@ -159,7 +219,7 @@ body, main {
     top: 0;
     left: 0;
     z-index: 9999;
-    background: var(--secondary);
+    background: var(--dark);
     opacity: 1; 
     visibility: hidden;
     transition: opacity 0.5s, visibility 0.5s;
@@ -170,51 +230,30 @@ body, main {
     visibility: visible;
 }
 
-.loader {
-    overflow: hidden;
+.traffic-loader {
+    width: 50px;
+    height: 50px;
+    --c: radial-gradient(farthest-side, #fff 92%, #0000);
+    background: var(--c) 50% 0, var(--c) 50% 100%, var(--c) 100% 50%,
+      var(--c) 0 50%;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    animation: s8 1s infinite;
     position: relative;
 }
-
-.wheel {
-    fill: rgb(128, 128, 128);
-    font-size: 100px;
-    width: 100px;
-    height: 100px;
-    border-radius: 6em;
-    text-align: center;
-    animation: rolling 1s linear infinite;
-}
   
-#rim {
-    fill: rgb(126, 126, 126);
-}
-  
-#tire {
-    fill: rgb(55, 55, 55);
-}
-  
-.road {
+.traffic-loader::before {
+    content: "";
     position: absolute;
-    margin-top: -4px;
-    width: 100%;
-    height: 10px;
-    border-radius: 5em;
-    background-color: rgb(55, 55, 55);
-    animation: road-move 2s linear infinite;
+    inset: 0;
+    margin: 3px;
+    background: repeating-conic-gradient(#0000 0 35deg, #fff 0 90deg);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 3px), #000 0);
+    border-radius: 50%;
 }
   
-@keyframes rolling {
-    to {
-      transform: rotate(-360deg);
-    }
-}
-  
-@keyframes road-move {
-    from {
-      transform: translateX(-140%);
-    }
-  
-    to {
-      transform: translateX(100%);
+@keyframes s8 {
+    100% {
+      transform: rotate(0.5turn);
     }
 }

@@ -1,6 +1,35 @@
 // Loader 
+$("#loader-container").addClass('visible');
 
+$("body").css("overflow", "hidden");
 
+$(window).on('load', function() {
+    $("#loader-container").removeClass('visible');
+    $("body").css("overflow", "auto");
+});
+
+// Navbar dynamic
+let lastScrollTop = 0;
+
+$(window).scroll(function() {
+    const currentScrollTop = $(this).scrollTop();
+    const navbar = $(".navbar");
+
+    if (currentScrollTop > lastScrollTop) {
+        navbar.removeClass("slide-down").addClass("slide-up");
+    } else {
+        navbar.removeClass("slide-up").addClass("slide-down");
+    }
+
+    lastScrollTop = currentScrollTop;
+});
+
+// Show More
+$('#toggle-skills').on('click', function(e) {
+    e.preventDefault(); 
+    $('.more-skills').toggleClass('show'); 
+    $('#toggle-skills i').toggleClass('bi-chevron-down bi-chevron-up'); 
+});
 
 // Skills SLider
 let currentSlide = 0;

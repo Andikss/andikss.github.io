@@ -16,6 +16,7 @@ body {
     width: 100vw;
     padding: 0 !important;
     margin: 0 !important;
+    overflow-x: hidden !important;
 }
 
 main {
@@ -86,7 +87,7 @@ main {
 .fade-left {
     opacity: 0;
     transform: translateX(-30px);
-    transition: opacity s ease-out, transform s ease-out;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out !important;
 }
 
 .fade-left.fade-left-show {
@@ -97,7 +98,7 @@ main {
 .fade-right {
     opacity: 0;
     transform: translateX(30px);
-    transition: opacity s ease-out, transform s ease-out;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out !important;
 }
 
 .fade-right.fade-right-show {
@@ -108,7 +109,7 @@ main {
 .fade-up {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity s ease-out, transform s ease-out;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out !important;
 }
 
 .fade-up.fade-up-show {
@@ -119,7 +120,7 @@ main {
 .fade-down {
     opacity: 0;
     transform: translateY(-30px);
-    transition: opacity s ease-out, transform s ease-out;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out !important;
 }
 
 .fade-down.fade-down-show {

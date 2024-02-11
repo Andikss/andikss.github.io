@@ -25,7 +25,10 @@
 
         <header class="navbar navbar-expand-lg navbar-dark shadow">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">AndikaDS</a>
+                <a class="navbar-brand center gap-2" href="https://github.com/Andikss/">
+                    <img src="./assets/img/Icons/github.svg" alt="GitHub" width="40">
+                    <span class="text-white d-none">AndikaDS</span>
+                </a>
                 <button button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -60,9 +63,8 @@
 
         <main>
             <section id="hero">
-                <div class="circle-1"></div>
-                <div class="circle-2"></div>
-                <img src="./assets/img/main.webp" alt="Hero Image">
+                <img src="./assets/img/main.webp" class="main-image" alt="Hero Image">
+                <img src="./assets/img/main-person.webp" class="mobile-image d-none" alt="Hero Image">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 p-5 d-flex justify-content-center flex-column fade-left">
                         <h1>Andika Dwi Saputra</h1>
@@ -94,7 +96,7 @@
                     </p>
 
                     <div class="row px-5">
-                        <div class="col-lg-5 col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
+                        <div class="col-lg-5 col-md-12 col-sm-12 p-0 m-0 center">
                             <div class="profile-image shadow fade-right">
                                 <img src="./assets/img/profile-2.webp" alt="Profile Image" class="profile-image">
                             </div>
@@ -119,7 +121,7 @@
                                             Feel free to check out my portfolio!
                                         </small>
                                     </p>
-                                    <div>
+                                    <div class="button-wrapper">
                                         <button id="btn-cv" class="btn-outline-accent">
                                             Download CV
                                         </button>
@@ -264,7 +266,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row px-4 mt-0 fade-right">
+                    <div class="row px-4 mt-0 fade-right mobile-skills">
                         <div class="col-lg-2 col-md-6 col-sm-12 p-2">
                             <div class="badge shadow-sm">
                                 <img src="./assets/img/Icons/mysql.svg" alt="MySQL">
@@ -390,7 +392,7 @@
                     <h2 class="text-white text-title mt-4">Experience</h2>
 
                     <div class="container-fluid">
-                        <div class="row">
+                        <div class="row row-1">
                             <div class="col-lg-6 col-md-12 col-sm-12">
                                 <ul>
                                     <li class="fade-up">
@@ -430,12 +432,12 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-content-center fade-right">
+                            <div class="filler col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-content-center fade-right">
                                 <img src="./assets/img/Icons/csharp.svg" alt="React Icon" width="200px">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-content-center fade-left">
+                            <div class="filler col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-content-center fade-left">
                                 <img src="./assets/img/Icons/react.svg" alt="React Icon" width="200px" class="rotate">
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12">
@@ -541,7 +543,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12 d-flex">
-                                <div class="card shadow">
+                                <div class="card shadow mb-0">
                                     <div class="card-body">
                                         <div class="image-wrapper">
                                             <img src="./assets/img/Portfolio/wired.webp" alt="Wired">
@@ -595,7 +597,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12 d-flex">
-                                <div class="card shadow">
+                                <div class="card shadow mb-0">
                                     <div class="card-body">
                                         <div class="image-wrapper">
                                             <img src="./assets/img/Portfolio/staging.webp" alt="Staging Panel">
@@ -647,7 +649,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12 d-flex">
-                                <div class="card shadow">
+                                <div class="card shadow mb-0">
                                     <div class="card-body">
                                         <div class="image-wrapper">
                                             <img src="./assets/img/Portfolio/mrs.webp" alt="MRS Genius">
@@ -692,39 +694,39 @@
                     
                         <div class="row mt-4 mb-5">
                             <div class="col-lg-9 col-md-12 col-md-12">
-                                <div class="row mb-4 fade-left">
-                                    <div class="col-lg-4 col-md-12 col-sm-12 d-flex">
+                                <div class="row">
+                                    <div class="mb-3 col-lg-4 col-md-12 col-sm-12 d-flex fade-left">
                                         <img class="shadow" src="./assets/img/Portfolio/sql-advanced.webp" alt="SQL Advanced">
                                     </div>
-                                    <div class="col-lg-4 col-md-12 col-sm-12 d-flex">
+                                    <div class="mb-3 col-lg-4 col-md-12 col-sm-12 d-flex fade-left">
                                         <img class="shadow" src="./assets/img/Portfolio/javascript-intermediate.webp" alt="Javascript Intermediate">
                                     </div>
-                                    <div class="col-lg-4 col-md-12 col-sm-12 d-flex">
+                                    <div class="mb-3 col-lg-4 col-md-12 col-sm-12 d-flex fade-left">
                                         <img class="shadow" src="./assets/img/Portfolio/webdev.webp" alt="Web Development">
                                     </div>
                                 </div>
-                                <div class="row fade-left">
-                                    <div class="col-lg-4 col-md-12 col-sm-12 d-flex">
+                                <div class="row">
+                                    <div class="mb-3 col-lg-4 col-md-12 col-sm-12 d-flex fade-left">
                                         <img class="shadow" src="./assets/img/Portfolio/data-programing.webp" alt="Data Programming">
                                     </div>
-                                    <div class="col-lg-4 col-md-12 col-sm-12 d-flex">
+                                    <div class="mb-3 col-lg-4 col-md-12 col-sm-12 d-flex fade-left">
                                         <img class="shadow" src="./assets/img/Portfolio/tech.webp" alt="Tech for Everyone">
                                     </div>
-                                    <div class="col-lg-4 col-md-12 col-sm-12 d-flex">
+                                    <div class="mb-3 col-lg-4 col-md-12 col-sm-12 d-flex fade-left">
                                         <img class="shadow" src="./assets/img/Portfolio/lks.webp" alt="Lomba Kecerdasan Siswa">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-12 col-sm-12 d-flex flex-column fade-right">
                                 <img class="shadow" src="./assets/img/Portfolio/toeic.webp" alt="TOEIC English" width="100%">
-                                <a href="https://www.linkedin.com/in/andika-dwi-saputra-10877928b/" class="connect">
+                                <a href="https://www.linkedin.com/in/andika-dwi-saputra-10877928b/" class="connect shadow">
                                     <img src="./assets/img/Icons/linkedin.svg" alt="Linkedin" width="40">&nbsp;
                                     Connect with me
                                 </a>
                             </div>
                         </div>
 
-                        <div class="d-flex align-items-center justify-content-center my-4 fade-up">
+                        <div class="follow-wrapper d-flex align-items-center justify-content-center my-4 fade-up">
                             <a href="https://www.instagram.com/andikads__" class="dark-link shadow">
                                 <img src="./assets/img/Icons/instagram.svg" alt="Instagram" width="40">&nbsp;
                                 <span>Follow me on Instagram</span>
@@ -745,16 +747,16 @@
                         </h4>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 center">
-                        <p>
+                        <p class="text-center">
                             Interested in working together? We should 
                             queue up a time to chat. I’ll buy the coffee.
                         </p>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 center">
-                        <button class="btn-outline-accent">
+                        <a href="https://wa.me/qr/Q5BPJDQQIUBLH1" class="btn-outline-accent">
                             <i class="bi bi-journal-check"></i>&nbsp;
                             Wrap it up!
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

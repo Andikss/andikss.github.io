@@ -28,6 +28,7 @@ $(window).scroll(function() {
 $('#toggle-skills').on('click', function(e) {
     e.preventDefault(); 
     $('.more-skills').toggleClass('show'); 
+    $('.mobile-skills').toggleClass('show'); 
     $('#toggle-skills i').toggleClass('bi-chevron-down bi-chevron-up'); 
 });
 

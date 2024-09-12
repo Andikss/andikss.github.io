@@ -3,7 +3,7 @@ import { About, Certificate, Compaines, Education, Experience, Hero, Portfolio, 
 
 export default function Home() {
   return (
-    <main className="bg-main relative">
+    <main className="bg-main relative overflow-x-hidden">
       <Progress />
       <Navbar />
       <Facts />

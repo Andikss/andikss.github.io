@@ -25,7 +25,7 @@ export const Footer = () => {
         </div>
       </div>
 
-      <h4 className='mt-20 text-text text-center text-2xl'>
+      <h4 className='mt-24 text-text text-center text-2xl'>
         Living learning &&nbsp;
         <span className='text-accent'>
           leveling up <br />

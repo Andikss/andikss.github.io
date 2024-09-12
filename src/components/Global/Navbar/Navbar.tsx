@@ -76,7 +76,7 @@ export const Navbar: React.FC = () => {
             rel="noopener noreferrer"
             className="text-text hover:text-gray-400 flex items-center gap-2"
           >
-            <FaGithub size={32} />
+            <FaGithub size={45} />
             <span className='text-xl text-text'>AndikaDS</span>
           </a>
         </Tooltip>

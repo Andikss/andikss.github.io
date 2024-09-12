@@ -13,7 +13,7 @@ export const Hero = () => {
       <SosmedChain />
 
       <div className="relative h-screen grid grid-cols-1 md:grid-cols-2 w-full z-[1]">
-        <div className='flex w-full flex-col md:justify-center md:pl-14 items-center justify-end'>
+        <div className='flex w-full flex-col justify-center md:pl-14 items-center'>
           <div className="flex justify-center flex-col">
             <h1 className='flex items-center gap-2 pb-1 text-center text-accent whitespace-nowrap text-3xl md:text-4xl lg:text-5xl border-b-2 border-accent'>
               <FaChrome className='text-accent'/> Fullstack Developer
@@ -24,7 +24,7 @@ export const Hero = () => {
             </h2>
           </div>
         </div>
-        <div>
+        <div className='hidden md:block'>
           <img className='hidden md:block absolute bottom-0 h-[70%] md:right-8 xl:right-12 xl:h-[80%] object-contain' src="/assets/static/img/avatar.webp" alt="Avatar" />
         </div>
       </div>

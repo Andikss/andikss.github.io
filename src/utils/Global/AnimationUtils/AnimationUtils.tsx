@@ -48,7 +48,7 @@ export const ScrollAnimationWrapper: React.FC<ScrollAnimationWrapperProps> = ({
   };
 
   return (
-    <div style={animationStyle}>
+    <div style={animationStyle} className='flex'>
       {children}
     </div>
   );
